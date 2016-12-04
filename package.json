@@ -1,0 +1,36 @@
+{
+  "name": "charity-app-api-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node server.js"
+  },
+  "dependencies": {
+    "async": "^2.1.4",
+    "babel-core": "^6.18.2",
+    "babel-register": "^6.18.0",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "dotenv": "^2.0.0",
+    "errorhandler": "^1.5.0",
+    "express": "^4.14.0",
+    "express-graphql": "^0.6.1",
+    "express-validator": "^3.0.0",
+    "graphql": "^0.8.2",
+    "jsonwebtoken": "^7.1.9",
+    "mongoose": "^4.7.0",
+    "morgan": "^1.7.0",
+    "multer": "^1.2.0",
+    "node-fetch": "^1.6.3",
+    "nodemailer": "^2.6.4",
+    "nodemon": "^1.11.0",
+    "source-map-support": "^0.4.6",
+    "stripe": "^4.13.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0"
+  }
+}
