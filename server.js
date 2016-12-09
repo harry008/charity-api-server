@@ -4,6 +4,7 @@ require('babel-register');
 import 'source-map-support/register';
 import http from 'http';
 import path from 'path';
+import helmet from 'helmet';
 import mongoose from 'mongoose';
 import graphQLHTTP from 'express-graphql';
 
@@ -84,6 +85,7 @@ if (process.env.NODE_ENV === 'development') {
 // });
 
 const server = http.createServer(app);
+app.use(helmet.hidePoweredBy()); // Disable 'x-powered-by' header
 app.use(logger('dev'));
 // app.use(compression());
 app.use(bodyParser.json());
